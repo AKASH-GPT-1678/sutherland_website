@@ -9,11 +9,12 @@ import InsuranceMenu from '../industiy/InsuranceMenu'
 import TravelLogisticMenu from '../industiy/TravelLogistic'
 import ProductsandPlatform from '../menucomponents/ProductsandPlatform'
 import ContatForm from '../forms/contactForm'
+import InsightView from '../components/insightView'
 
 const page = () => {
     return (
-        <div className=''>
-           <ContatForm/>
+        <div className='' style={{}}>
+        <InsightView/>
         </div>
     )
 }
