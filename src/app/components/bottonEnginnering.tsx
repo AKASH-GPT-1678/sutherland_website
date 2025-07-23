@@ -2,6 +2,8 @@ import { it } from 'node:test';
 import React from 'react'
 import FlyingDetails from './flyingdetails';
 import InsightView from './insightView';
+import ContatForm from '../forms/contactForm';
+import BottomFooter from './bottonFooter';
 
 
 
@@ -36,6 +38,13 @@ const BottomEnginnering = () => {
 
             <div>
                 <InsightView/>
+            </div>
+
+            <div>
+                <ContatForm/>
+            </div>
+            <div>
+                <BottomFooter/>
             </div>
 
 
