@@ -37,7 +37,7 @@ const BottomFooter = () => {
                 <Image src={Instagram.src} alt='imags' width={"20"} height={"20"} className='cursor-pointer' />
                 <Image src={Facebook.src} alt='imags' width={"20"} height={"20"} className='cursor-pointer' />
                 <Image src={LinkedIn.src} alt='imags' width={"20"} height={"20"} className='cursor-pointer' />
-                
+
 
             </div>
 
