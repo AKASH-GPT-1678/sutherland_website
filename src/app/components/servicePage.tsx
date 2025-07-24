@@ -6,6 +6,8 @@ import SutherLogo from "../../app/assets/logo.png";
 import GlobeIcon from "../../app/assets/globe.png";
 import SearchIcon from "../../app/assets/search.png";
 import ThreeLine from "../../app/assets/line.png";
+import ContatForm from '../forms/contactForm';
+import BottomFooter from './bottonFooter';
 
 const technologies = [
     "Advanced Analytics",
@@ -137,6 +139,12 @@ const ServicePage = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            <div>
+
+                <ContatForm />
+                <BottomFooter />
             </div>
 
         </div>

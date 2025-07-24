@@ -9,7 +9,7 @@ const ContatForm = () => {
                 <div>
 
 
-                    <div className="mt-16 grid grid-rows-5 gap-8 md:grid-cols-3 h-fit ">
+                    <div className="mt-16 grid grid-rows-7 gap-8 md:grid-cols-3 ">
                         <input type="text" placeholder="First Name" className="p-3 bg-white rounded-lg py-5" />
                         <input type="text" placeholder="Last Name" className="p-3 bg-white rounded-lg" />
                         <input type="email" placeholder="Email" className="p-3 bg-white rounded-lg" />
@@ -21,16 +21,25 @@ const ContatForm = () => {
                             placeholder="How we can help you?"
                             className="p-3 bg-white rounded-lg md:col-span-2"
                         />
+
+
+                        <span className='flex flex-row gap-2 w-full  items-center justify-center'>
+                            <input type="checkbox" className='p-4' />
+                            <p className='text-sm'>Opt in to our email list, and we'll send you information about relevant content, products, and services</p>
+                        </span>
+
+                        <span className='text-xs'>
+                            <p>
+                                We process your Personal Data as needed to establish and maintain a business relationship with Sutherland. Your Personal Data may be disclosed to third parties in the normal course of business or as needed to comply with the law. A complete privacy notice is available at: privacy policy.
+                            </p>
+                        </span>
+                        <span>
+                            <button className='bg-blue-600 text-white p-2 px-6 rounded-lg'>Submit</button>
+                        </span>
                     </div>
 
 
 
-                    <div className='flex flex-row gap-2'>
-                        <input type="checkbox" />
-                        <p>Opt in to our email list, and we'll send you information about relevant content, products, and services</p>
-
-
-                    </div>
 
 
 
