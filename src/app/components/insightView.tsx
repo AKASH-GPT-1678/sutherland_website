@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
-import PurpleBg from "../assets/purpbg.png";
-import Image from 'next/image';
+
 import Report1 from "../insightasset/agentic-wave.png";
 import Report2 from "../insightasset/ai-tower.png";
 import Report3 from "../insightasset/aibrain.png";
@@ -9,7 +8,6 @@ import Report4 from "../insightasset/flight-women.png";
 import Report5 from "../insightasset/hand-smile.webp";
 import Report6 from "../insightasset/human.png";
 import Report7 from "../insightasset/team-meeting.webp";
-import ContatForm from '../forms/contactForm';
 
 
 

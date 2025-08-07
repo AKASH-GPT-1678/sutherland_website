@@ -1,12 +1,14 @@
+"use client";
 import React from 'react';
 import SutherLogo from "../../app/assets/logo.png";
 import Image from 'next/image';
 import GlobeIcon from "../../app/assets/globe.png";
 import SearchIcon from "../../app/assets/search.png";
 import ThreeLine from "../../app/assets/line.png";
-
+import { useRouter } from 'next/navigation';
 
 const HomeDisplay = () => {
+  const router = useRouter();
   return (
     <div className='flex flex-row justify-between items-center'>
       <div id='header' className='flex flex-row p-2'>
@@ -16,9 +18,9 @@ const HomeDisplay = () => {
         <div className=' flex-row hidden gap-2 ml-6  md:inline'>
           <ul className='flex flex-row gap-2'>
             <li className='m-2 font-medium hover:font-semibold text-sm'>Services</li>
-            <li className='m-2 font-medium hover:font-semibold text-sm'>Industries</li>
+            <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/industries")}>Industries</li>
             <li className='m-2 font-medium hover:font-semibold text-sm'>Products & Platforms</li>
-            <li className='m-2 font-medium hover:font-semibold text-sm'>Insights</li>
+            <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/insights")}>Insights</li>
             <li className='m-2 font-medium hover:font-semibold text-sm'>About Us</li>
             <li className='m-2 font-medium hover:font-semibold text-sm'>Careers</li>
 

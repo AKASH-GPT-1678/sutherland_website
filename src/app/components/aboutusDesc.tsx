@@ -1,15 +1,15 @@
 import React from 'react'
-import PupleBg from "../assets/purpbg.png";
+
 import Image from 'next/image';
 
-const data = [
-    { value: "$500M", description: "In annual written premiums delivered for commercial insurance leader" },
-    { value: "70%", description: "Efficiency uplift through digital operations for a global technology leader" },
-    { value: "45%", description: "Faster loan cycles for a top mortgage lender with a digital-first approach" },
-    { value: "60%", description: "Margin improvement for a leading airline through intelligent automation and digital modernization" },
-    { value: "25%", description: "Uplift in customer delight through digital CX transformation for a leading fintech and digital bank" },
-    { value: "40%", description: "Increase in receivables for a leading municipal health system with operational transformation" }
-];
+// const data = [
+//     { value: "$500M", description: "In annual written premiums delivered for commercial insurance leader" },
+//     { value: "70%", description: "Efficiency uplift through digital operations for a global technology leader" },
+//     { value: "45%", description: "Faster loan cycles for a top mortgage lender with a digital-first approach" },
+//     { value: "60%", description: "Margin improvement for a leading airline through intelligent automation and digital modernization" },
+//     { value: "25%", description: "Uplift in customer delight through digital CX transformation for a leading fintech and digital bank" },
+//     { value: "40%", description: "Increase in receivables for a leading municipal health system with operational transformation" }
+// ];
 const data2 = [
     {
         value: "$500M",

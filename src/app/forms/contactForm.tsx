@@ -10,10 +10,10 @@ const ContatForm = () => {
 
 
                     <div className="mt-16 grid grid-rows-7 gap-8 md:grid-cols-3 ">
-                        <input type="text" placeholder="First Name" className="p-3 bg-white rounded-lg py-5" />
-                        <input type="text" placeholder="Last Name" className="p-3 bg-white rounded-lg" />
-                        <input type="email" placeholder="Email" className="p-3 bg-white rounded-lg" />
-                        <input type="text" placeholder="Company Name" className="p-3 bg-white rounded-lg" />
+                        <input type="text" placeholder="First Name" className="p-1 bg-white rounded-lg py-5" />
+                        <input type="text" placeholder="Last Name" className="p-1 bg-white rounded-lg" />
+                        <input type="email" placeholder="Email" className="p-1 bg-white rounded-lg" />
+                        <input type="text" placeholder="Company Name" className="p-1 bg-white rounded-lg" />
 
 
                         <input
@@ -24,8 +24,8 @@ const ContatForm = () => {
 
 
                         <span className='flex flex-row gap-2 w-full  items-center justify-center'>
-                            <input type="checkbox" className='p-4' />
-                            <p className='text-sm'>Opt in to our email list, and we'll send you information about relevant content, products, and services</p>
+                            <input type="checkbox" className='p-2' />
+                            <p className='text-sm'>Opt in to our email list, and we&apos;ll send you information about relevant content, products, and services</p>
                         </span>
 
                         <span className='text-xs'>

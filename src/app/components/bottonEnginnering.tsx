@@ -1,4 +1,4 @@
-import { it } from 'node:test';
+
 import React from 'react'
 import FlyingDetails from './flyingdetails';
 import InsightView from './insightView';

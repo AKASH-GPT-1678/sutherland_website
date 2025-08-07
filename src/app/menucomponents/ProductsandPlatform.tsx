@@ -1,56 +1,56 @@
 import React from 'react'
 import MegaMenuSection from './MegaMenu';
 
-const sutherlandProducts = [
-  {
-    title: "Sutherland Agent Success",
-    description: "AI-powered agent assist"
-  },
-  {
-    title: "Sutherland Anywhere®",
-    description: "Remote workforce management platform"
-  },
-  {
-    title: "CloudTestr",
-    description: "AI-powered test automation"
-  },
-  {
-    title: "Cognitive Knowledge Engine (CKE)",
-    description: "AI-driven information self-service"
-  },
-  {
-    title: "Sutherland Connect®",
-    description: "Omnichannel CX powered by AI"
-  },
-  {
-    title: "Conversational AI",
-    description: "Intelligent chat & voice support automation"
-  },
-  {
-    title: "Sutherland CX360®",
-    description: "Customer 360° insights"
-  },
-  {
-    title: "eSeal®",
-    description: "Intelligent supply chain visibility platform"
-  },
-  {
-    title: "Extract",
-    description: "Document digitization made easy with AI"
-  },
-  {
-    title: "Robility®",
-    description: "Enterprise hyperautomation platform"
-  },
-  {
-    title: "Sutherland Sentinel AI®",
-    description: "Secure your data"
-  },
-  {
-    title: "Sutherland Translate AI®",
-    description: "AI-powered multi-lingual translation"
-  }
-];
+// const sutherlandProducts = [
+//   {
+//     title: "Sutherland Agent Success",
+//     description: "AI-powered agent assist"
+//   },
+//   {
+//     title: "Sutherland Anywhere®",
+//     description: "Remote workforce management platform"
+//   },
+//   {
+//     title: "CloudTestr",
+//     description: "AI-powered test automation"
+//   },
+//   {
+//     title: "Cognitive Knowledge Engine (CKE)",
+//     description: "AI-driven information self-service"
+//   },
+//   {
+//     title: "Sutherland Connect®",
+//     description: "Omnichannel CX powered by AI"
+//   },
+//   {
+//     title: "Conversational AI",
+//     description: "Intelligent chat & voice support automation"
+//   },
+//   {
+//     title: "Sutherland CX360®",
+//     description: "Customer 360° insights"
+//   },
+//   {
+//     title: "eSeal®",
+//     description: "Intelligent supply chain visibility platform"
+//   },
+//   {
+//     title: "Extract",
+//     description: "Document digitization made easy with AI"
+//   },
+//   {
+//     title: "Robility®",
+//     description: "Enterprise hyperautomation platform"
+//   },
+//   {
+//     title: "Sutherland Sentinel AI®",
+//     description: "Secure your data"
+//   },
+//   {
+//     title: "Sutherland Translate AI®",
+//     description: "AI-powered multi-lingual translation"
+//   }
+// ];
 const customerExperience = [
   {
     title: "Cognitive Knowledge Engine",
