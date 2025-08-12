@@ -156,7 +156,7 @@ const AboutUsDescriptions = () => {
         <div style={{ backgroundImage: "url('https://res.cloudinary.com/dffepahvl/image/upload/v1752875688/ifehmu2g3t6vluifruxl.jpg')", height: "100%", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className="h-screen p-8 md:p-10 w-full md:w-[50%] " >
 
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 lg:p-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 lg:p-8 w-full mb-20">
             {data2.map((item, index) => (
               <div
                 key={index}
@@ -184,7 +184,7 @@ const AboutUsDescriptions = () => {
       </div>
 
       <div className='flex flex-col items-center justify-center w-full p-2 hide-scrollbar'>
-        <h1 className='mt-[-60] w-[70%] bg-white font-bold p-4 text-4xl '>Transformation Stories</h1>
+        <h1 className='mt-[-80] w-[70%] bg-white font-bold p-4 text-3xl '>Transformation Stories</h1>
 
 
 
@@ -211,4 +211,4 @@ const AboutUsDescriptions = () => {
   )
 }
 
-export default AboutUsDescriptions
+export default AboutUsDescriptions;

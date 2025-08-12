@@ -39,7 +39,7 @@ const industryOps = [
 export default function DigitalOperationsMenu() {
   return (
     <div className="bg-white shadow-lg p-6 w-full  grid grid-rows-2 gap-6">
-      {/* Left Section: Digital Operations */}
+
       <div className="row-span-2">
         <h2 className="text-xl font-semibold text-gray-800">Digital Operations</h2>
         <p className="text-sm text-gray-600 mb-4">
@@ -67,4 +67,4 @@ export default function DigitalOperationsMenu() {
       </div>
     </div>
   );
-}
+};

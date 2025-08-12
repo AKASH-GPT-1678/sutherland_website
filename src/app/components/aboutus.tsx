@@ -75,4 +75,4 @@ const AboutUsInfo = () => {
   )
 }
 
-export default AboutUsInfo
+export default AboutUsInfo;

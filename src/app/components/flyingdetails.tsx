@@ -31,13 +31,12 @@ const data = [
 
 const FlyingDetails = () => {
     return (
-
-        <div className='p-4 md:px-12 grid grid-rows md:grid-cols-3 space-y-5 space-x-6'>
-            {
-                data.map((item, index) => (
+        <div className="p-4 md:px-12 w-full">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {data.map((item, index) => (
                     <div
                         key={index}
-                        className='h-[200px] bg-white shadow-xl min-w-[300px] flex flex-col p-4 gap-4'
+                        className="bg-white shadow-xl rounded-lg flex flex-col p-4 gap-4 min-h-[170px] hover:scale-105 transition-transform duration-300"
                         style={{
                             backgroundImage: 'url("https://res.cloudinary.com/dffepahvl/image/upload/v1753296006/xuz5u3w4cyo9my0p0izy.webp")',
                             backgroundSize: 'cover',
@@ -45,21 +44,17 @@ const FlyingDetails = () => {
                             backgroundRepeat: 'no-repeat'
                         }}
                     >
-                        <h1 className='font-bold text-2xl'>{item.title}</h1>
-                        <p className='font-medium'>{item.description}</p>
-                        <p className='text-pink-500 font-bold flex flex-row gap-2'>Learn More
-                            <Image src={Forward.src} alt='' width={20} height={12} />
-
-
+                        <h1 className="font-bold text-lg md:text-xl lg:text-2xl">{item.title}</h1>
+                        <p className="font-medium text-sm md:text-base lg:text-lg">{item.description}</p>
+                        <p className="text-pink-500 font-bold flex items-center gap-2 cursor-pointer">
+                            Learn More
+                            <Image src={Forward.src} alt="" width={20} height={12} />
                         </p>
-
                     </div>
-
-                ))
-            }
-
-
+                ))}
+            </div>
         </div>
+
     )
 }
 

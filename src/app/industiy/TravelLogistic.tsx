@@ -18,7 +18,7 @@ export default function TravelLogisticMenu() {
         <div className="bg-white p-6 rounded shadow-lg  xl:w-[1000px] mx-auto space-y-10">
 
             <div>
-                <h2 className="text-lg font-semibold text-gray-800 mb-1">Technology</h2>
+                <h2 className="text-lg font-semibold text-gray-800 mb-1">Travel , Transportation and Logistics Menu</h2>
 
                 <div className="grid grid-cols-2 gap-5">
                     {travelLogisticsItems.map(({ title, description }, index) => (

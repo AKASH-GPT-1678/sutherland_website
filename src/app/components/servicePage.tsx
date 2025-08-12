@@ -40,7 +40,7 @@ const ServicePage = () => {
                 {/* Header */}
                 <div>
                     <div className='flex flex-row justify-between items-center'>
-                        {/* Logo and Navigation */}
+                    
                         <div id='header' className='flex flex-row p-2'>
                             <div id='logo'>
                                 <Image
@@ -61,7 +61,7 @@ const ServicePage = () => {
                             </div>
                         </div>
 
-                        {/* Icons and Contact */}
+                      
                         <div className='flex flex-row p-2'>
                             <div className='p-2 flex flex-row gap-4 md:gap-4 items-center justify-center'>
                                 <Image src={GlobeIcon.src} alt='globe' width={20} height={20} className='cursor-pointer' />
@@ -77,7 +77,7 @@ const ServicePage = () => {
                     </div>
                 </div>
 
-                {/* Hero Text */}
+          
                 <div className='max-w-[700px]'>
                     <h1 className='text-3xl lg:text-4xl font-bold text-white p-4 md:px-20'>Services</h1>
                     <p className='text-white p-4 md:px-20 text-sm'>
@@ -86,7 +86,7 @@ const ServicePage = () => {
                 </div>
             </div>
 
-            {/* Intro Section */}
+       
             <div className='px-20 mt-12 mb-8 flex flex-col md:flex-row justify-between space-x-4 space-y-4'>
                 <p className='text-2xl lg:text-3xl max-w-[500px] font-bold'>
                     Engineering Digital Outcomes With Innovative Partnership Models
@@ -96,7 +96,7 @@ const ServicePage = () => {
                 </p>
             </div>
 
-            {/* First Grid Section */}
+      
             <div className='flex flex-col md:flex-row space-y-4 w-full md:space-x-6'>
                 <div className='relative md:min-w-[400px] md:min-h-[400px] xl:min-w-[600px]'>
                     <Image
@@ -122,7 +122,7 @@ const ServicePage = () => {
                 </div>
             </div>
 
-            {/* Second Grid Section */}
+      
             <div className='flex flex-col md:flex-row space-y-4 w-full md:space-x-6'>
                 <div className='w-full min-w-[400px] min-h-[100px] md:max-w-[600px] bg-gray-300 md:min-h-[400px]'>
                     <p className=' items-center p-5 text-2xl font-bold text-black'>Services</p>

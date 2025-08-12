@@ -6,9 +6,11 @@ import GlobeIcon from "../../app/assets/globe.png";
 import SearchIcon from "../../app/assets/search.png";
 import ThreeLine from "../../app/assets/line.png";
 import { useRouter } from 'next/navigation';
-
+import FloatingService from './floatInfos';
+import FloatingInfoIndustries from './floatInfoIndustries';
 const HomeDisplay = () => {
   const router = useRouter();
+  const [activeMenu, setActiveMenu] = React.useState('');
   return (
     <div className='flex flex-row justify-between items-center'>
       <div id='header' className='flex flex-row p-2'>
@@ -17,8 +19,42 @@ const HomeDisplay = () => {
         </div>
         <div className=' flex-row hidden gap-2 ml-6  md:inline'>
           <ul className='flex flex-row gap-2'>
-            <li className='m-2 font-medium hover:font-semibold text-sm'>Services</li>
-            <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/industries")}>Industries</li>
+
+
+
+
+            <div>
+              <li className='m-2 font-medium hover:font-semibold text-sm relative' onMouseEnter={() => setActiveMenu('services')}>Services</li>
+
+
+
+
+              {
+                activeMenu === 'services' && (
+                  <div className='absolute top-14 z-40 '>
+                    <FloatingService />
+                  </div>
+                )
+              }
+
+            </div>
+
+
+
+
+
+
+
+            <div>
+              <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('industries')}>Industries</li>
+              {
+                activeMenu === 'industries' && (
+                  <div className='absolute top-14 z-40 '>
+                    <FloatingInfoIndustries />
+                  </div>
+                )
+              }
+            </div>
             <li className='m-2 font-medium hover:font-semibold text-sm'>Products & Platforms</li>
             <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/insights")}>Insights</li>
             <li className='m-2 font-medium hover:font-semibold text-sm'>About Us</li>
@@ -40,7 +76,7 @@ const HomeDisplay = () => {
           <div className='hidden md:inline'>
             <button className='text-white bg-red-600 p-2 px-4 md:p-2.5 md:px-6 rounded-lg text-sm md:font-bold border-2 cursor-pointer border-red-600 hover:bg-white hover:text-red-600'>Contact Us</button>
           </div>
-          <Image src={ThreeLine.src} alt='imags' width={"20"} height={"20"}  className='md:hidden cursor-pointer'/>
+          <Image src={ThreeLine.src} alt='imags' width={"20"} height={"20"} className='md:hidden cursor-pointer' />
 
 
         </div>

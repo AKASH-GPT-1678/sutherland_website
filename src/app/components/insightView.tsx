@@ -59,20 +59,20 @@ const reports = [
 
 const InsightView = () => {
     const scrollRef = React.useRef<HTMLDivElement>(null);
-    const itemWidth = 400; // Same as image width
+
 
     const scrollNext = () => {
-        scrollRef.current?.scrollBy({ left: itemWidth, behavior: 'smooth' });
+        scrollRef.current?.scrollBy({ left: 400, behavior: 'smooth' });
     };
 
     const scrollPrev = () => {
-        scrollRef.current?.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+        scrollRef.current?.scrollBy({ behavior: 'smooth' });
     };
 
     return (
         <div
 
-            className='h-[250px] bg-white shadow-xl min-w-[400px] flex flex-col p-4 gap-4 relative'
+            className='h-[250px] lg:min-h-[300px] bg-white shadow-xl min-w-[400px] flex flex-col p-4 gap-4 relative'
             style={{
                 backgroundImage: 'url("https://res.cloudinary.com/dffepahvl/image/upload/v1752875688/ifehmu2g3t6vluifruxl.jpg")',
                 backgroundSize: 'cover',
@@ -96,19 +96,21 @@ const InsightView = () => {
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className="flex-shrink-0 p-4"
+                        className="flex-shrink-0 p-4 min-w-[400px] lg:min-w-[600px] lg:min-h-[300px] flex flex-col "
                         style={{
-                            width: `${itemWidth}px`,
+                            width: `${100}px`,
                             scrollSnapAlign: 'start',
-                            backgroundImage:  `${`url(${item})`}`,
+                            backgroundImage: `${`url(${item})`}`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat'
                         }}
-                    >
-                      
 
-                        <p className='text-xl text-white'>{reports[index].title}</p>
+
+                    >
+
+
+                        <p className='text-xl text-white lg:mt-[100] '>{reports[index].title}</p>
                         <p className='text-sm text-white'>{reports[index].description}</p>
                     </div>
                 ))}
