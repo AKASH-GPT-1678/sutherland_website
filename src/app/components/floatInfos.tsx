@@ -1,5 +1,5 @@
 import React from 'react'
-import BpaaMenu from '../menucomponents/BpaaMenu'
+import BpaaMenu from '../menucomponents/BpaaMenu';
 import ConnectedAISection from '../menucomponents/connectedSection';
 import DigitalCXMenu from '../menucomponents/digitalCx'
 import DigitalEngineeringMenu from '../menucomponents/engineeringscvs'

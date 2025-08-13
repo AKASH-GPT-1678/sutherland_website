@@ -22,7 +22,7 @@ const technologyItems = [
 ];
 import { useRouter } from "next/navigation";
 
-export default function TechnologyMenu() {
+const TechnologyMen = () => {
     const router = useRouter();
     return (
         <div className="bg-white p-6 rounded shadow-lg  xl:w-[1000px] mx-auto space-y-10">
@@ -48,3 +48,4 @@ export default function TechnologyMenu() {
         </div>
     );
 }
+export default TechnologyMen;

@@ -13,7 +13,7 @@ const communicationItems = [
 ];
 
 
-export default function IndustryCommunication() {
+const IndustryCommunication = () => {
     return (
         <div className="bg-white p-6 rounded shadow-lg  xl:w-[1000px] mx-auto space-y-10">
 
@@ -21,8 +21,8 @@ export default function IndustryCommunication() {
                 <h2 className="text-lg font-semibold text-gray-800 mb-1">Communications, Media, and Entertainment</h2>
 
                 <div className="grid grid-cols-2 gap-6">
-                    {communicationItems.map(({ title, description , url}, index) => (
-                        <div key={index} className="group cursor-pointer" onClick={()=> window.location.href = url }>
+                    {communicationItems.map(({ title, description, url }, index) => (
+                        <div key={index} className="group cursor-pointer" onClick={() => window.location.href = url}>
                             <h3 className="text-sm font-semibold text-blue-800 ">{title}</h3>
                             <div className='border-2 w-12 border-red-500 invisible  group-hover:visible'></div>
 
@@ -38,3 +38,5 @@ export default function IndustryCommunication() {
         </div>
     );
 }
+;
+export default IndustryCommunication;

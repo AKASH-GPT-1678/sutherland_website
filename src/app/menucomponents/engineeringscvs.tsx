@@ -45,7 +45,7 @@ const digitalEngineeringItems = [
 ];
 import { useRouter } from 'next/navigation';
 
-export default function DigitalEngineeringMenu() {
+const DigitalEngineeringMenu  =() => {
   const router = useRouter();
   return (
     <div className="bg-white shadow-lg p-6 w-full max-w-4xl grid grid-cols-2 gap-4">
@@ -64,3 +64,5 @@ export default function DigitalEngineeringMenu() {
     </div>
   );
 }
+
+export default DigitalEngineeringMenu;

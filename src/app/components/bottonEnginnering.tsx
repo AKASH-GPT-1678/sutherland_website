@@ -23,13 +23,13 @@ const BottomEnginnering = () => {
                 </div>
             </div>
 
-     
+
             <div className='absolute top-44 '>
-                <FlyingDetails/>
+                <FlyingDetails />
 
             </div>
 
-      
+
 
             <div className='bg-blue-700 mt-40 h-[500px] w-full'>
 
@@ -37,14 +37,14 @@ const BottomEnginnering = () => {
             </div>
 
             <div>
-                <InsightView/>
+                <InsightView />
             </div>
 
             <div>
-                <ContatForm/>
+                <ContatForm />
             </div>
             <div>
-                <BottomFooter/>
+                <BottomFooter />
             </div>
 
 

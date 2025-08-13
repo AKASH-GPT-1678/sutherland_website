@@ -1,5 +1,4 @@
 import React from 'react';
-
 import IndustryCommunication from '../industiy/Communication';
 import HealthCareMenu from '../industiy/HealthCareMenu';
 import TechnologyMenu from '../industiy/TechnologyMenu';

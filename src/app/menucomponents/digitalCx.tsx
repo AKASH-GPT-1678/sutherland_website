@@ -46,7 +46,7 @@ const digitalCXItems = [
 import { useRouter } from 'next/navigation';
 
 
-export default function DigitalCXMenu() {
+const DigitalCXMenu = () => {
   const router = useRouter();
   return (
     <div className="bg-white shadow-lg p-6 w-full max-w-4xl grid grid-cols-2 gap-4">
@@ -66,3 +66,5 @@ export default function DigitalCXMenu() {
     </div>
   );
 }
+
+export default DigitalCXMenu;

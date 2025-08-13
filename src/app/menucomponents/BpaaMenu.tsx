@@ -37,7 +37,7 @@ const services = [
 ];
 import { useRouter } from "next/navigation";
 
-export default function BpaaMenu() {
+const BpaaMenu = () => {
     const router = useRouter();
     return (
         <div className="bg-white p-6 rounded shadow-lg xl:w-[800px] h-full">
@@ -57,3 +57,5 @@ export default function BpaaMenu() {
         </div>
     );
 }
+
+export default BpaaMenu;

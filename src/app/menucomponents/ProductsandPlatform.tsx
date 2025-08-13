@@ -99,7 +99,7 @@ const ProductsandPlatform = () => {
 
                 </div>
                 <div>
-                    {/* <MegaMenuSection title='AI am Automation' items={sutherlandProducts}/> */}
+                   
                     <MegaMenuSection title='Customer Experience' items={customerExperience} />
                     <h1>hii</h1>
 

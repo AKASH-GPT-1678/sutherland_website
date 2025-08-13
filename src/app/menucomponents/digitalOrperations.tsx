@@ -77,7 +77,7 @@ const industryOps = [
 
 import { useRouter } from 'next/navigation';
 
-export default function DigitalOperationsMenu() {
+const DigitalOperationsMenu =() => {
   const router = useRouter();
   return (
     <div className="bg-white shadow-lg p-6 w-full  grid grid-rows-2 gap-6">
@@ -110,3 +110,5 @@ export default function DigitalOperationsMenu() {
     </div>
   );
 };
+
+export default DigitalOperationsMenu;
