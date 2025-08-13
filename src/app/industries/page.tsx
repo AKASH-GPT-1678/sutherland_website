@@ -6,7 +6,7 @@ import BottomFooter from '../components/bottonFooter';
 import Image from 'next/image';
 import SutherLogo from "../assets/sutherlogo.png";
 import { useRouter } from 'next/navigation';
-const industries = [
+export const industries = [
     "Banking and Financial Services",
     "Communications, Media, and Entertainment",
     "Energy and Utilities",
@@ -46,7 +46,7 @@ const Industries = () => {
 
 
                 </div>
-                <h1 className="text-white text-3xl font-bold p-12 flex items-center">Industries We Serve</h1>
+                <h1 className="text-white text-3xl font-bold p-12 flex items-center xl:mx-14">Industries We Serve</h1>
             </div>
 
             <div className="p-8 mt-10 flex  flex-col md:flex-row justify-between lg:ml-24">

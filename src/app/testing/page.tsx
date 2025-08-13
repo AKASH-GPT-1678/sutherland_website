@@ -6,7 +6,6 @@ import TransformativeStories from '../components/TranformativeStories';
 import FloatingforPlatform from '../components/floatingforPlatform';
 import ReuseMenuView from '../components/ReuseMenuView';
 
-
 const page = () => {
     return (
     <div>

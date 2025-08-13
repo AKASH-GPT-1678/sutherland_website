@@ -27,7 +27,7 @@ const HomeDisplay = () => {
 
 
             <div>
-              <li className='m-2 font-medium hover:font-semibold text-sm relative' onMouseEnter={() => setActiveMenu('services')}>Services</li>
+              <li className='m-2 font-medium hover:font-semibold text-sm relative' onMouseEnter={() => setActiveMenu('services')} onClick={() => router.push("/services")}>Services</li>
 
 
 
@@ -49,7 +49,7 @@ const HomeDisplay = () => {
 
 
             <div>
-              <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('industries')}>Industries</li>
+              <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('industries')} onClick={() => router.push("/industries")}>Industries</li>
               {
                 activeMenu === 'industries' && (
                   <div className='absolute top-14 z-40 '>
@@ -60,7 +60,7 @@ const HomeDisplay = () => {
             </div>
 
             <div>
-                 <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('platforms')}>Products & Platforms</li>
+              <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('platforms')} onClick={() => router.push("/platforms")}>Products & Platforms</li>
 
               {
                 activeMenu === 'platforms' && (
@@ -70,9 +70,9 @@ const HomeDisplay = () => {
                 )
               }
             </div>
-       
+
             <div>
-                   <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/insights")} onMouseEnter={() => setActiveMenu('insights')}>Insights</li>
+              <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/insights")} onMouseEnter={() => setActiveMenu('insights')}>Insights</li>
 
               {
                 activeMenu === 'insights' && (
@@ -85,7 +85,7 @@ const HomeDisplay = () => {
             </div>
 
             <div>
-                          <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('aboutus')}>About Us</li>
+              <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('aboutus')}>About Us</li>
 
               {
                 activeMenu === 'aboutus' && (
