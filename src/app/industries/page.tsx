@@ -19,7 +19,7 @@ const industries = [
     "Travel, Transportation, Hospitality & Logistics"
 ];
 
-const page = () => {
+const Industries = () => {
     const router = useRouter();
     return (
         <div>
@@ -82,4 +82,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Industries;
