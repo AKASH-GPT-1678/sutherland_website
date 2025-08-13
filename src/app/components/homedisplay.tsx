@@ -8,6 +8,9 @@ import ThreeLine from "../../app/assets/line.png";
 import { useRouter } from 'next/navigation';
 import FloatingService from './floatInfos';
 import FloatingInfoIndustries from './floatInfoIndustries';
+import FloatingforPlatform from './floatingforPlatform';
+import Insights from './Insights';
+import AboutUsInfo from './aboutus';
 const HomeDisplay = () => {
   const router = useRouter();
   const [activeMenu, setActiveMenu] = React.useState('');
@@ -55,9 +58,44 @@ const HomeDisplay = () => {
                 )
               }
             </div>
-            <li className='m-2 font-medium hover:font-semibold text-sm'>Products & Platforms</li>
-            <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/insights")}>Insights</li>
-            <li className='m-2 font-medium hover:font-semibold text-sm'>About Us</li>
+
+            <div>
+                 <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('platforms')}>Products & Platforms</li>
+
+              {
+                activeMenu === 'platforms' && (
+                  <div className='absolute top-14 z-40 '>
+                    <FloatingforPlatform />
+                  </div>
+                )
+              }
+            </div>
+       
+            <div>
+                   <li className='m-2 font-medium hover:font-semibold text-sm' onClick={() => router.push("/insights")} onMouseEnter={() => setActiveMenu('insights')}>Insights</li>
+
+              {
+                activeMenu === 'insights' && (
+                  <div className='absolute top-14 z-40 '>
+                    <Insights />
+                  </div>
+                )
+              }
+
+            </div>
+
+            <div>
+                          <li className='m-2 font-medium hover:font-semibold text-sm' onMouseEnter={() => setActiveMenu('aboutus')}>About Us</li>
+
+              {
+                activeMenu === 'aboutus' && (
+                  <div className='absolute top-14 z-40 w-full '>
+                    <AboutUsInfo />
+                  </div>
+                )
+              }
+
+            </div>
             <li className='m-2 font-medium hover:font-semibold text-sm'>Careers</li>
 
           </ul>

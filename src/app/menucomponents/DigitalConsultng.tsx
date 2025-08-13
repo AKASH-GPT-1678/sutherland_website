@@ -1,22 +1,25 @@
 // components/DigitalConsultingMenu.js
 import React from 'react';
-
 const digitalConsultingItems = [
   {
     title: 'Insight and Design Labs',
     description: 'Human-centric CX and EX with AI',
+    url: 'https://www.sutherlandglobal.com/services/digital-consulting/insight-and-design',
   },
   {
     title: 'Experience-Led Digital Transformation',
     description: 'Experience-led transformation journey',
+    url: 'https://www.sutherlandglobal.com/services/digital-consulting/experience-led-digital-transformation',
   },
   {
     title: 'Digital Acceleration Center',
     description: 'Transform at speed and scale',
+    url: 'https://www.sutherlandglobal.com/services/digital-consulting/digital-acceleration-center',
   },
 ];
-
+import { useRouter } from 'next/navigation';
 export default function DigitalConsultingMenu() {
+  const router = useRouter();
   return (
     <div className="bg-white shadow-lg p-6 w-full max-w-4xl grid grid-cols-2 gap-4">
       <div className="col-span-2">
@@ -26,7 +29,7 @@ export default function DigitalConsultingMenu() {
         </p>
       </div>
       {digitalConsultingItems.map((item, index) => (
-        <div key={index}>
+        <div key={index} onClick={()=> router.push(item.url)}>
           <h3 className="text-sm font-medium text-blue-700">{item.title}</h3>
           <p className="text-xs text-gray-600">{item.description}</p>
         </div>
